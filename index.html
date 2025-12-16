@@ -1,81 +1,340 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nom du Festival de Jeu Vidéo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Festival Monster Hunter - Découvrez l'univers passionnant des jeux Monster Hunter lors de notre festival gaming">
+    <title>Festival Monster Hunter | Gaming Event 2024</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">[LOGO DU FESTIVAL]</div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#exposants">Exposants</a></li>
-                <li><a href="#contact">Contact</a></li>
-                </ul>
-        </nav>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span class="logo-icon">🎮</span>
+                    <span class="logo-text">MH<span class="accent">Festival</span></span>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#accueil" class="nav-link active">Accueil</a>
+                    <a href="#jeux" class="nav-link">Jeux</a>
+                    <a href="#programme" class="nav-link">Programme</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Burger Menu (Mobile) -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+        </div>
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <section id="accueil" class="hero-section">
-            <div class="hero-content">
-                <h1>Le Festival ULTIME du Jeu Vidéo</h1>
-                <p>Venez vivre une expérience inoubliable !</p>
-                <a href="#" class="cta-button">Acheter mes billets</a>
-            </div>
-            </section>
 
-        <section id="programme" class="cards-section">
-            <h2>🏆 Les incontournables du Festival</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <h3>Tournois E-Sport</h3>
-                    <p>Affrontez les meilleurs joueurs régionaux.</p>
+        <!-- HERO SECTION -->
+        <section class="hero" id="accueil">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Festival</span>
+                        <span class="title-line gradient-text">Monster Hunter</span>
+                        <span class="title-line">2024</span>
+                    </h1>
+                    <p class="hero-subtitle">Rejoignez la plus grande communauté de chasseurs et découvrez l'univers
+                        épique de Monster Hunter</p>
+                    <a href="#jeux" class="cta-button">
+                        <span>Découvrir les Jeux</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
                 </div>
-                <div class="card">
-                    <h3>Rencontre de Streamers</h3>
-                    <p>Venez saluer vos créateurs de contenu préférés.</p>
-                </div>
-                <div class="card">
-                    <h3>Zone Rétro-Gaming</h3>
-                    <p>Redécouvrez les classiques sur consoles d'époque.</p>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-icon"></div>
+            </div>
+        </section>
+
+        <!-- CARDS SECTION -->
+        <section class="cards-section" id="jeux">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-decoration">━━</span>
+                    Les Jeux Présentés
+                    <span class="title-decoration">━━</span>
+                </h2>
+
+                <div class="cards-grid">
+                    <!-- Card 1: Monster Hunter World -->
+                    <article class="game-card">
+                        <div class="card-image">
+                            <img src="images/mh-world.jpg" alt="Monster Hunter World" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Monster Hunter World</h3>
+                            <p class="card-description">Explorez le Nouveau Monde et chassez des monstres légendaires
+                                dans des environnements époustouflants.</p>
+                            <div class="card-tags">
+                                <span class="tag">Action</span>
+                                <span class="tag">RPG</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Monster Hunter Rise -->
+                    <article class="game-card">
+                        <div class="card-image">
+                            <img src="images/mh-rise.jpg" alt="Monster Hunter Rise" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Monster Hunter Rise</h3>
+                            <p class="card-description">Utilisez les Filoptères pour une mobilité inédite et affrontez
+                                la Calamité dans un Japon féodal.</p>
+                            <div class="card-tags">
+                                <span class="tag">Action</span>
+                                <span class="tag">Aventure</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Monster Hunter Wilds -->
+                    <article class="game-card">
+                        <div class="card-image">
+                            <img src="images/mh-wilds.jpg" alt="Monster Hunter Wilds" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Monster Hunter Wilds</h3>
+                            <p class="card-description">La prochaine génération de chasse arrive ! Découvrez des
+                                territoires sauvages et mystérieux.</p>
+                            <div class="card-tags">
+                                <span class="tag">Nouveauté</span>
+                                <span class="tag">2025</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="presentation-section">
-            <div class="presentation-image">
-                <img src="votre-image-presentation.jpg" alt="Description de l'événement" loading="lazy">
-            </div>
-            <div class="presentation-text">
-                <h2>🎮 L'événement de l'année</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. ...</p>
-                <p>N'oubliez pas de réserver votre place dès maintenant !</p>
+        <!-- PRESENTATION SECTION (Split 50/50) -->
+        <section class="presentation-section" id="programme">
+            <div class="container">
+                <div class="presentation-split">
+                    <!-- Image Side (50%) -->
+                    <div class="presentation-image">
+                        <img src="images/mh-presentation.jpg" alt="Univers Monster Hunter" loading="lazy">
+                        <div class="image-decoration"></div>
+                    </div>
+
+                    <!-- Text Side (50%) -->
+                    <div class="presentation-content">
+                        <h2 class="presentation-title">L'Univers <span class="gradient-text">Monster Hunter</span></h2>
+                        <div class="presentation-text">
+                            <p>Depuis plus de 20 ans, Monster Hunter captive des millions de joueurs à travers le monde
+                                avec son gameplay unique et ses créatures épiques.</p>
+
+                            <p>Dans cet univers, vous incarnez un chasseur intrépide dont la mission est de traquer et
+                                affronter des monstres colossaux dans des environnements spectaculaires. Chaque chasse
+                                est un défi stratégique nécessitant préparation, observation et maîtrise.</p>
+
+                            <p>Rejoignez notre festival pour découvrir ou redécouvrir les derniers titres de la
+                                franchise, rencontrer d'autres passionnés, et participer à des sessions de jeu
+                                exclusives !</p>
+                        </div>
+
+                        <div class="presentation-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Ans d'Histoire</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">95M+</div>
+                                <div class="stat-label">Joueurs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">14</div>
+                                <div class="stat-label">Armes Uniques</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- FAQ SECTION (Accordion) -->
         <section class="faq-section">
-            </section>
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-decoration">━━</span>
+                    Questions Fréquentes
+                    <span class="title-decoration">━━</span>
+                </h2>
 
-        <section id="contact" class="contact-section">
-            <h2>✉️ Formulaire de Contact</h2>
-            <form action="#" method="POST" class="contact-form">
-                <label for="email">Votre Email :</label>
-                <input type="email" id="email" name="email" required>
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quand se déroule le festival ?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Le Festival Monster Hunter 2024 se tiendra du 15 au 17 mars 2024 au Palais des Congrès.
+                                Trois jours d'immersion totale dans l'univers de la chasse !
+                            </div>
+                        </div>
+                    </div>
 
-                <label for="message">Votre Message :</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Dois-je avoir joué à Monster Hunter pour participer ?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Absolument pas ! Le festival accueille aussi bien les chasseurs vétérans que les
+                                débutants. Des sessions découverte et des tutoriels seront disponibles pour les nouveaux
+                                joueurs.
+                            </div>
+                        </div>
+                    </div>
 
-                <button type="submit" class="send-button">ENVOYER</button>
-            </form>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quelles sont les activités proposées ?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Au programme : sessions de jeu en solo et multi-joueur, tournois, rencontres avec les
+                                développeurs, expositions d'artworks, stands de merchandising, et bien plus encore !
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Comment obtenir des billets ?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Les billets sont disponibles sur notre billetterie en ligne. Pass journée à 25€ et pass
+                                3 jours à 60€. Réservez vite, les places sont limitées !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Contactez-nous</h2>
+                        <p class="contact-description">Une question ? Une suggestion ? N'hésitez pas à nous contacter,
+                            nous vous répondrons dans les plus brefs délais.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="detail-icon">📧</span>
+                                <span>contact@mhfestival.fr</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span>Palais des Congrès, Paris</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.fr" required
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Envoyer</span>
+                            <span class="submit-icon">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2025 [Nom du Festival] - Tous droits réservés.</p>
-        </footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">MH<span class="accent">Festival</span></span>
+                    </div>
+                    <p class="footer-tagline">La passion de la chasse</p>
+                </div>
 
+                <div class="footer-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#jeux">Jeux</a>
+                    <a href="#programme">Programme</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Discord">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Monster Hunter Festival. Tous droits réservés.</p>
+                <p class="footer-credit">Fait avec ❤️ pour la communauté</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
+
+</html>
