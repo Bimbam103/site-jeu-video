@@ -36,3 +36,19 @@
     color: #333;
     margin-top: 0;
 }
+/* --- Media Query pour le Mobile (Max 768px) --- */
+
+@media (max-width: 768px) {
+    
+    /* Le conteneur Flexbox bascule en colonne */
+    .cards-container {
+        flex-direction: column; /* Les cartes s'empilent verticalement */
+        gap: 15px; /* Ajustement de l'espacement */
+    }
+
+    /* Les cartes occupent toute la largeur */
+    .card {
+        width: 100%; 
+        min-width: auto;
+    }
+}
