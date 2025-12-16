@@ -36,6 +36,39 @@
     color: #333;
     margin-top: 0;
 }
+/* --- 4. Section Présentation (Split 50/50) --- */
+
+.presentation-section {
+    display: flex; /* Active Flexbox pour la mise en page Split */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 4a. Bloc Image (50%) */
+.presentation-image {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    padding-right: 30px; /* Ajoute un espace entre l'image et le texte */
+}
+
+.presentation-image img {
+    width: 100%; /* L'image remplit 100% de son conteneur (qui fait 50% du total) */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optionnel : pour un look plus moderne */
+}
+
+/* 4b. Bloc Texte (50%) */
+.presentation-text {
+    flex: 1; /* Prend l'autre 50% de l'espace disponible */
+}
+
+.presentation-text h2 {
+    color: #0056b3; /* Exemple de couleur thématique */
+    margin-top: 0;
+}
+
 /* --- Media Query pour le Mobile (Max 768px) --- */
 
 @media (max-width: 768px) {
@@ -50,5 +83,16 @@
     .card {
         width: 100%; 
         min-width: auto;
+    }
+    
+    /* Le conteneur Flexbox bascule en colonne */
+    .presentation-section {
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+    }
+
+    /* Supprime l'espace à droite de l'image et en ajoute en bas */
+    .presentation-image {
+        padding-right: 0;
+        padding-bottom: 20px; 
     }
 }
